@@ -52,7 +52,7 @@ export function getGroupUser(users){
     for(let index=0;index<length;index++){  
         let designation=value[index].desgination;
         let groupUserKey=Object.keys(groupUser) 
-        // console.log(designation);
+       
         for(let j=0;j<length;j++){
             if(designation.includes(groupUserKey[j])){
                 // console.log(key[index])
