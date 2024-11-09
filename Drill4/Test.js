@@ -1,4 +1,4 @@
-import {items} from "./arrays.js"
+import {items, nestedArray} from "./arrays.js"
 import {each,map,reduce,getEvenAndOdd,addTwo,display,find,findElement,filter,getEven,flatten}  from "./Solution.js"
 // each function 
 
@@ -25,5 +25,6 @@ let evenArray=filter(items,getEven);
 console.log(evenArray);
 
 // flatten function 
-let array=flatten(items); 
-console.log(array)
+let array=[];
+let resultArray=flatten(nestedArray,array); 
+console.log(resultArray)

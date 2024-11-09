@@ -46,7 +46,7 @@ function filter(elements, cb) {
   // Return an empty array if no elements pass the truth test
 }
 
-const nestedArray = [1, [2], [[3]], [[[4]]]]; // use this to test 'flatten'
+export const nestedArray = [1, [2], [[3]], [[[4]]]]; // use this to test 'flatten'
 
 function flatten(elements) {
   // Flattens a nested array (the nesting can be to any depth).

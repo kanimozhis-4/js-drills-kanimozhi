@@ -74,14 +74,16 @@ export function filter(items,getEven){
 } 
 
 // flatten function 
-export function flatten(items){ 
-  let array=[] 
-  for(let index=0;index<items.length;index++){
+export function flatten(items,array=[]){ 
+  let length=items.length
+  for(let index=0;index<length;index++){
     if(Array.isArray(items[index])){ 
-      array+=array.concat(flatten(items.index));
+      flatten(items[index],array);
 
-    } 
-    array.push(items[index]);
+    }  
+    else{ 
+      array.push(items[index]);
+    }
   } 
   return array
 }
