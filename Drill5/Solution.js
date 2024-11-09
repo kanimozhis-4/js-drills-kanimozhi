@@ -58,9 +58,9 @@ export function invert(obj){
 
 // default function 
 export function defaults(obj,defaultProps){ 
-    let defaultKey=Object.keys(defaultProps)
-    for(let key in obj){
-        if(defaultKey[0]==key){
+    let defaultKey=keys(defaultProps)
+    for(let key in obj){ 
+        if(defaultKey.includes(key)){
             obj[key]=defaultProps[key];
         }
     } 
